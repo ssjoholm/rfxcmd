@@ -3575,6 +3575,10 @@ def decodePacket(message):
 			sys.stdout.write("%s;%s;%s;%s;%s;%s;%s\n" % (timestamp, unixtime_utc, packettype, subtype, seqnbr, id1 + id2, str(sensor_power)))
 			sys.stdout.flush()
 		
+                # DATABASE
+                if config.mysql_active or config.sqlite_active or config.pgsql_active:
+                        insert_database(timestamp, unixtime_utc, packettype, subtype, seqnbr, 0, 0, sensor_id, 0, 0, 0, int(sensor_power), 0, 0, 0, 0, 0, 0, 0, 0)
+
 		logger.debug("Decode packetType 0x" + str(packettype) + " - End")
 	
 	# ---------------------------------------
