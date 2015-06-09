@@ -1,5 +1,12 @@
 # rfxcmd
 
+------------------------------------------------------------------------------------------------------------------
+NOTE!
+
+This repository is work in progress, an extensive rewrite of RFXcmd is ongoing. This code might not work as
+it should. Please check the rfxcmd_gc repository which is currently the working repo.
+------------------------------------------------------------------------------------------------------------------
+
 DESCRIPTION
 
 RFXcmd is Python script that interfaces the RFX USB devices from RFXcom http://www.rfxcom.com.
